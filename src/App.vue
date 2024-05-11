@@ -1,14 +1,27 @@
 <template>
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="flex">
+    <!-- 사이드 메뉴 -->
+    <SideMenuComponent />
+    <!-- 왼쪽 화면 (접히는 부분) -->
+    <FriendsComponent />
+
+    <!-- 오른쪽 화면 -->
+    <ChatComponent />
+  </div>
+
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import SideMenuComponent from './components/SideMenuComponent.vue'
+import FriendsComponent from './components/FriendsComponent.vue'
+import ChatComponent from './components/ChatComponent.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    SideMenuComponent,
+    FriendsComponent,
+    ChatComponent,
   }
 }
 </script>

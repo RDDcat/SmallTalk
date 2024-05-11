@@ -9,9 +9,7 @@ const modalStore = {
   },
   
   mutations: {
-    CloseAll: (state) => {
-
-    },
+    
   },
 
   actions: {
