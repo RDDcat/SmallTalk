@@ -1,11 +1,11 @@
 <template>
-  <div class="inline-block">    
+  <div class="inline-block h-full">    
     <!-- 타이틀 -->
     <div class="ml-4 my-4 font-semibold text-2xl">
       친구
     </div>
     <!-- 친구 목록 -->
-    <div class="flex flex-col w-96 h-96 overflow-x-hidden overflow-y-auto">
+    <div class="flex flex-col w-96 overflow-x-hidden overflow-y-auto">
       <!-- 친구 컴포넌트 -->
       <div class="flex w-full h-14 px-4 my-3">
         <!-- 이미지 -->

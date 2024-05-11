@@ -1,6 +1,6 @@
 <template>
   <!-- 외부 -->
-  <div class="w-[40rem] h-96">
+  <div class="w-[56rem] h-[36rem]">
   <div class="flex max-w-screen-xl min-w-screen-sm min-h-full">
     <!-- 사이드 메뉴 -->
     <SideMenuComponent />
@@ -8,7 +8,8 @@
     <FriendsComponent />
 
     <!-- 오른쪽 화면 -->
-    <ChatComponent />
+    <MainComponent v-if="$store.state.modalStore.isMain"/>
+    <ChatComponent v-if="$store.state.modalStore.isChat"/>
   </div>
   </div>
 
@@ -17,6 +18,7 @@
 <script>
 import SideMenuComponent from './components/SideMenuComponent.vue'
 import FriendsComponent from './components/FriendsComponent.vue'
+import MainComponent from './components/MainComponent.vue'
 import ChatComponent from './components/ChatComponent.vue'
 
 export default {
@@ -24,6 +26,7 @@ export default {
   components: {
     SideMenuComponent,
     FriendsComponent,
+    MainComponent,
     ChatComponent,
   }
 }
