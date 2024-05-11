@@ -1,12 +1,12 @@
 <template>
-  <div class="w-20 h-full">
+  <div class="w-20 bg-gradient-to-tl from-violet-400 to-indigo-600">
     <!-- 로고 -->
 
     <!-- 아이콘 리스트 -->
     <div class="w-full">
       <!-- 아이콘 컨테이너 -->
       <div class="mx-auto my-2 p-1 w-12 h-12" v-for="icon, index in icon_list" :key="index">
-        <img class="w-full h-full object-cover" :src="icon">
+        <img class=" object-cover" :src="icon">
       </div>
 
     </div>

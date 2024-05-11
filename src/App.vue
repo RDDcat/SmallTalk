@@ -1,5 +1,7 @@
 <template>
-  <div class="flex">
+  <!-- 외부 -->
+  <div class="w-[40rem] h-96">
+  <div class="flex max-w-screen-xl min-w-screen-sm min-h-full">
     <!-- 사이드 메뉴 -->
     <SideMenuComponent />
     <!-- 왼쪽 화면 (접히는 부분) -->
@@ -7,6 +9,7 @@
 
     <!-- 오른쪽 화면 -->
     <ChatComponent />
+  </div>
   </div>
 
 </template>
@@ -31,8 +34,5 @@ export default {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
 }
 </style>
