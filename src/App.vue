@@ -1,11 +1,14 @@
 <template>
   <!-- 외부 -->
-  <div class="w-[56rem] h-[36rem]">
+  <div class="max-w-screen max-h-screen">
   <div class="flex max-w-screen-xl min-w-screen-sm min-h-full">
     <!-- 사이드 메뉴 -->
     <SideMenuComponent />
     <!-- 왼쪽 화면 (접히는 부분) -->
     <FriendsComponent />
+
+    <!-- 라인 -->
+    <div class="h-screen w-1 bg-gray-100"></div>
 
     <!-- 오른쪽 화면 -->
     <MainComponent v-if="$store.state.modalStore.isMain"/>

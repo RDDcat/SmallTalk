@@ -1,5 +1,5 @@
 <template>
-  <div class="min-w-20 w-20 bg-gradient-to-tl from-violet-400 to-indigo-600">
+  <div class="min-w-20 w-1/12 bg-gradient-to-tl from-violet-400 to-indigo-600">
     <!-- 로고 -->
 
     <!-- 아이콘 리스트 -->
